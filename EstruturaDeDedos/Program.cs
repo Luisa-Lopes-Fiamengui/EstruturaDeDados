@@ -69,7 +69,7 @@ internal class Program
         carros.Add(2, "Ferrari");
 
         Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine("----------------------------------------------------");
         Console.WriteLine();
 
         Console.WriteLine("Meu Dicionário de carros:");
@@ -78,6 +78,54 @@ internal class Program
         {
             Console.WriteLine($"{carro.Key} - {carro.Value}");
         }
+
+        Console.WriteLine();
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine();
+
+        Queue<string> filaBanco = new Queue<string>();
+
+        filaBanco.Enqueue("André");
+        filaBanco.Enqueue("João");
+        filaBanco.Enqueue("Maria");
+        filaBanco.Enqueue("Bia");
+        filaBanco.Enqueue("Luisa");
+
+        foreach (var pessoa in filaBanco)
+        {
+            Console.WriteLine(pessoa);
+        }
+
+        Console.WriteLine();
+
+        bool achou = filaBanco.Contains("Bia");
+        if (achou == true)
+        {
+            Console.WriteLine("A pessoa está na fila.");
+        }
+        else
+        {
+            Console.WriteLine("A pessoa não está na fila.");
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine();
+
+        Stack<string> livros = new Stack<string>();
+
+        livros.Push("Chapeuzinho Vermelho");
+        livros.Push("Branca de Neve e os sete anões");
+        livros.Push("A Princesa e o Sapo");
+
+        foreach (var livro in livros)
+        {
+            Console.WriteLine(livro);
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine();
 
     }
 }
