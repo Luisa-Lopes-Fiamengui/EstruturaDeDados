@@ -61,5 +61,23 @@ internal class Program
         }
 
         frutas.Clear();
+
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+
+        carros.Add(5, "Corsa");
+        carros.Add(18, "Fusca");
+        carros.Add(2, "Ferrari");
+
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+
+        Console.WriteLine("Meu Dicionário de carros:");
+
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
+
     }
 }
